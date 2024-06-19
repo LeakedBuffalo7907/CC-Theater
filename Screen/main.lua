@@ -8,7 +8,7 @@ modem.open(port)
 while true do
     local event, side, channel, replyChannel, message, distance = os.pullEvent("modem_message")
     
-    if channel == 2001 then--remote
+    if replyChannel == 2001 then--remote
         local jsonData = textutils.unserialize(message)
 
         if jsonData.type == "update" then
