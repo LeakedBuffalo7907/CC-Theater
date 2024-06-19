@@ -19,5 +19,5 @@ while true do
             shell.run("reboot")
         end
     end
-
+    print("Modem Activity")
 end

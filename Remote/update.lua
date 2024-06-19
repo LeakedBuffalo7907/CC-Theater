@@ -10,7 +10,7 @@ update.screens = function (args)
         type = "update"
     }
     modem.transmit(2000, port, textutils.serialize(data))
-    term.print("Update Signal Sent")
+    term.write("Update Signal Sent")
 end
 
 update.monitor = function (args) 
