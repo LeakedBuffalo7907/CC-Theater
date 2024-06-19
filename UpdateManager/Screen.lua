@@ -20,7 +20,6 @@ local function checkFile(path, name)
   end
 end
 
-  print("Installing now")
   downloadFile("/", "main.lua")
   downloadFile("/", "startup.lua")
   
