@@ -1,4 +1,4 @@
-local baseRepoURL = "http://raw.githubusercontent.com/LeakedBuffalo7907/CC-Theater/main/InstallManager"
+local baseRepoURL = "http://raw.githubusercontent.com/LeakedBuffalo7907/CC-Theater/main/Screen"
 
 local function downloadFile(path, name)
   local status = "Downloaded"
@@ -21,10 +21,7 @@ local function checkFile(path, name)
 end
 
   print("Installing now")
-  downloadFile("/", "update.lua")
-  term.setTextColor(colors.blue)
-  print("Installed")
-  term.setTextColor(colors.white)
-    
-
-
+  downloadFile("/", "main.lua")
+  downloadFile("/", "startup.lua")
+  
+  shell.run("reboot")
